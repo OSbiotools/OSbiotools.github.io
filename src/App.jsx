@@ -18,6 +18,7 @@ const tools = [
     name: 'BioPetals',
     description: 'Run BIOxAI models at home, BitTorrent-style.',
     href: 'https://github.com/OSbiotools/BioPetals',
+    badge: 'beta',
     details:
       'A fork of Petals focused on biology-oriented workflows, with examples for distributed inference, fine-tuning, and OpenBioLLM.',
     links: [
@@ -122,7 +123,10 @@ function ToolsPage() {
               aria-expanded={openTool === tool.name}
               onClick={() => setOpenTool(openTool === tool.name ? '' : tool.name)}
             >
-              <span>{tool.name}</span>
+              <span className="tool-card-toggle-label">
+                <span>{tool.name}</span>
+                {tool.badge && <span className="tool-badge">{tool.badge}</span>}
+              </span>
               <span className="tool-card-toggle-icon">+</span>
             </button>
 

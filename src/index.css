@@ -226,6 +226,28 @@ input[type='search']:focus {
   cursor: pointer;
 }
 
+.tool-card-toggle-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.tool-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(10, 111, 100, 0.18);
+  background: rgba(10, 111, 100, 0.08);
+  color: var(--accent);
+  font-size: 0.7rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
 .tool-card-toggle-icon {
   font-size: 1.2rem;
   line-height: 1;
