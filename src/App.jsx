@@ -5,11 +5,11 @@ const tools = [
   {
     name: 'OS bioinformatics',
     description: 'Open catalog for sharing open-source bioinformatics tools.',
-    href: 'https://OSbioprojects.vercel.app',
+    href: 'https://osbiotools.github.io/OSbioinformatics/',
     details:
       'A simple place to find and share open-source bioinformatics tools. Use it to browse, publish, and follow work in one spot.',
     links: [
-      { label: 'Open site', href: 'https://OSbioprojects.vercel.app' },
+      { label: 'Open site', href: 'https://osbiotools.github.io/OSbioinformatics/' },
       { label: 'Source', href: 'https://github.com/Pranesh950' },
     ],
     tags: 'catalog tools open source bioinformatics',
@@ -29,8 +29,7 @@ function Header() {
         <NavLink to="/tools">Tools</NavLink>
       </nav>
     </header>
-  )rm -rf docs/*
-cp -r dist/* docs/
+  )
 }
 
 function HomePage() {
