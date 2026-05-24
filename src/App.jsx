@@ -82,7 +82,6 @@ function HomePage() {
 
 function ToolsPage() {
   const [query, setQuery] = useState('')
-  const [openTool, setOpenTool] = useState('OS bioinformatics')
 
   const filteredTools = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -117,33 +116,25 @@ function ToolsPage() {
       <section className="tool-grid reveal">
         {filteredTools.map((tool) => (
           <article className="tool-card" key={tool.name}>
-            <button
-              type="button"
-              className="tool-card-toggle"
-              aria-expanded={openTool === tool.name}
-              onClick={() => setOpenTool(openTool === tool.name ? '' : tool.name)}
-            >
+            <div className="tool-card-toggle">
               <span className="tool-card-toggle-label">
                 <span>{tool.name}</span>
                 {tool.badge && <span className="tool-badge">{tool.badge}</span>}
               </span>
-              <span className="tool-card-toggle-icon">+</span>
-            </button>
+            </div>
 
             <p>{tool.description}</p>
 
-            {openTool === tool.name && (
-              <div className="tool-details">
-                <p>{tool.details}</p>
-                <div className="tool-links">
-                  {tool.links.map((link) => (
-                    <a key={link.label} className="tool-link" href={link.href} target="_blank" rel="noreferrer">
-                      {link.label}
-                    </a>
-                  ))}
-                </div>
+            <div className="tool-details">
+              <p>{tool.details}</p>
+              <div className="tool-links">
+                {tool.links.map((link) => (
+                  <a key={link.label} className="tool-link" href={link.href} target="_blank" rel="noreferrer">
+                    {link.label}
+                  </a>
+                ))}
               </div>
-            )}
+            </div>
           </article>
         ))}
       </section>
