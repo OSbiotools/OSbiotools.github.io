@@ -14,6 +14,18 @@ const tools = [
     ],
     tags: 'catalog tools open source bioinformatics',
   },
+  {
+    name: 'BioPetals',
+    description: 'Run BIOxAI models at home, BitTorrent-style.',
+    href: 'https://github.com/OSbiotools/BioPetals',
+    details:
+      'A fork of Petals focused on biology-oriented workflows, with examples for distributed inference, fine-tuning, and OpenBioLLM.',
+    links: [
+      { label: 'Open repo', href: 'https://github.com/OSbiotools/BioPetals' },
+      { label: 'Petals site', href: 'https://petals.dev' },
+    ],
+    tags: 'biology llm distributed inference fine-tuning petals',
+  },
 ]
 
 function Header() {
