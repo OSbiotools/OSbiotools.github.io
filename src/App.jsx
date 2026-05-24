@@ -29,7 +29,8 @@ function Header() {
         <NavLink to="/tools">Tools</NavLink>
       </nav>
     </header>
-  )
+  )rm -rf docs/*
+cp -r dist/* docs/
 }
 
 function HomePage() {
