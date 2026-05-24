@@ -116,8 +116,8 @@ function ToolsPage() {
       <section className="tool-grid reveal">
         {filteredTools.map((tool) => (
           <article className="tool-card" key={tool.name}>
-            <div className="tool-card-toggle">
-              <span className="tool-card-toggle-label">
+            <div className="tool-card-header">
+              <span className="tool-card-header-label">
                 <span>{tool.name}</span>
                 {tool.badge && <span className="tool-badge">{tool.badge}</span>}
               </span>

@@ -210,23 +210,16 @@ input[type='search']:focus {
   font-size: 1.2rem;
 }
 
-.tool-card-toggle {
+.tool-card-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
   width: 100%;
-  border: 0;
-  background: transparent;
   color: var(--ink);
   font: inherit;
   font-weight: 800;
-  text-align: left;
-  padding: 0;
-  cursor: pointer;
 }
 
-.tool-card-toggle-label {
+.tool-card-header-label {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -246,11 +239,6 @@ input[type='search']:focus {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 800;
-}
-
-.tool-card-toggle-icon {
-  font-size: 1.2rem;
-  line-height: 1;
 }
 
 .tool-details {
