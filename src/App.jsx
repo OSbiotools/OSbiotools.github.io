@@ -20,7 +20,7 @@ function Header() {
   return (
     <header className="topbar">
       <NavLink to="/" className="brand">
-        Bio Tools Collective
+        Open Source Biotools
       </NavLink>
       <nav>
         <NavLink to="/" end>
